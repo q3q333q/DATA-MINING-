@@ -33,8 +33,8 @@ def splitDataSet(dataSet, axis, value): #分割
 def chooseBestFeatureToSplit(dataSet):
     numberFeatures = len(dataSet[0])-1
     baseEntropy = calcShannonEnt(dataSet)
-    bestInfoGain = 0.0;
-    bestFeature = -1;
+    bestInfoGain = 0.0
+    bestFeature = -1
     for i in range(numberFeatures):
         featList = [example[i] for example in dataSet]
         uniqueVals = set(featList)
